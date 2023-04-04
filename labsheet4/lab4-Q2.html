@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>lab4 q2</title>
+        <script>
+            function display(){
+                let stdId1 = document.myForm.stdId.value;
+
+                document.getElementById("print").innerHTML = ("<hr"+"<br>"+"Your ID is start with "+stdId1.substr(0,2))
+            }
+        </script>
+    </head>
+    <body>
+        <form name="myForm">
+            <label>ID:</label> <input type ="text" name="stdId">
+
+            <input type ="button" value = "CLICK!"
+                onclick= "display()"/>
+        </form>
+
+        <p id="print"></p>
+    </body>
+</html>

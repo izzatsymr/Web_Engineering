@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>lab3 Q6</title>
+    </head>
+
+    <body>
+        <script>
+            var code= prompt("What is your course code?");
+            var programName;
+
+            switch(code){
+                case "BCS":
+                    programName = "Software Engineering";
+                break;
+
+                case "BCN":
+                    programName = "Computer Systems and Networking";
+                break;
+
+                case "BCG":
+                    programName = "Graphic and Multimedia";
+                break;
+
+                case "DCS":
+                    programName = "Diploma";
+                break;
+
+                default:
+                programName = "Not FK undergraduate student";
+                break;
+            }
+
+            document.write (programName);
+        </script>
+    </body>
+</html>

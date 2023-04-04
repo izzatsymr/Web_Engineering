@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>lab4 q3</title>
+        <script>
+            function display(){
+                var num1 = parseFloat(document.myForm.num2.value);
+                var num2 = parseFloat(document.myForm.num1.value); //parseFloat can change to Number.
+                document.getElementById("display").innerHTML = ("<hr"+"<br>"+"Total =  "+ (num1+num2))
+            }
+        </script>
+    </head>
+    <body>
+        <form name="myForm">
+            <label>Number 1:</label> <input type ="number" name="num1">
+            <label>Number 2:</label> <input type ="number" name="num2">
+
+            <input type ="button" value = "CLICK!"
+                onclick= "display()"/>
+        </form>
+
+        <p id="display"></p>
+    </body>
+</html>

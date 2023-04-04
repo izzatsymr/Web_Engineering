@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple excercise</title>
+        <script>
+            function display(){
+                var name1 = document.myForm.name.value;
+
+                document.getElementById("demo").innerHTML = ("<hr"+"<br>"+"Welcome "+name1)
+            }
+        </script>
+    </head>
+    <body>
+        <form name="myForm">
+            <label>Name:</label> <input type ="text" name="name">
+
+            <input type ="button" value = "CLICK!"
+                onclick= "display()"/>
+        </form>
+
+        <p id="demo"></p>
+    </body>
+</html>

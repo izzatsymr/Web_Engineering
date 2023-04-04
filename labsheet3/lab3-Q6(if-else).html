@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>lab3 Q6</title>
+    </head>
+
+    <body>
+        <script>
+            var code= prompt("What is your course code?");
+            var programName;
+
+            if(code == "BCS"){
+                programName = "Software Engineering";
+            }
+
+            else if (code == "BCN"){
+                programName = "Computer Systems and Networking";
+            }
+
+            else if (code == "BCG"){
+                programName = "Graphic and Multimedia";
+            }
+
+            else if (code == "DCS"){
+                programName = "Diploma";
+            }
+
+            else{
+                programName = "Not FK undergraduate student";
+            }
+
+            document.write (programName);
+        </script>
+    </body>
+</html>

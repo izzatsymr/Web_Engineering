@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="lab5script.js"></script>
+</head>
+
+<body>
+    <form name="myForm">
+        <fieldset>
+            <legend>Personal details*</legend>
+
+            <label for="title">Title:</label>
+            <input type="radio" name="title" value="mr">Mr.
+            <input type="radio" name="title" value="ms">Ms.
+            <br>
+
+            <label>Name: </label><input type="text" name="name" required>
+            <br><br>
+
+            <label>Email: </label><input type="email" name="email" required>
+            <br><br>
+
+            <label>IC number: </label><input type="text" name="icNum" style="width: 6%;">
+            <br><br>
+
+            <label for="message">Leave a short message</label>
+            <textarea name="message" style="height: 100px;"></textarea>
+
+        </fieldset>
+
+        <br>
+
+        <input type="submit" onclick="validateEmail(document.myForm.email.value)">
+        <input type="button" value="display" onclick="display()">
+    </form>
+
+    <p id="demo"></p>
+</body>
+
+</html>

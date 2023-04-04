@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <h2 style="text-align: center;">Your Personal Details</h2>
+        <form action="html_form_action.php" method="get">
+            <table style="margin-left: 30vw; border-style: solid; ">
+                <tr>
+                    <td><Label style="font-weight: bold;">Your Name:</label></td>
+                    <td colspan="5"><input type="text" name="name" style="width: 500px; "></td>
+                </tr>
+                <tr>
+                    <td><label style="font-weight: bold;">Student number:</label></td>
+                    <td colspan="5"><input type="text" name="name"  style="width: 250px;"></td>
+                </tr>
+                <tr>
+                    <td><label style="font-weight: bold;">Program:</label></td>
+                    <td colspan="5"><label><select name = "program">
+                        <option selected = "selected">Bachelor of Computer Science (Software Engineering) with Honours</option>
+                        <option>Bachelor of Computer Science (Software Engineering) with Honours</option>
+                        <option>Bachelor of Computer Science (Computer Systems & Networking) with Honours</option>
+                        <option>Bachelor of Computer Science (Graphics & Multimedia Technology) with Honours</option>
+                    </select><label></td>
+                </tr>
+
+                <tr>
+                    <td><label style="font-weight: bold;">Gender:</label></td>
+                    <td><input type="radio" name="sex" value="male">Male</td>
+                    <td><input type="radio" name="sex" value="female">Female</td>
+                </tr>
+                <tr>
+                    <td><label style="font-weight: bold;">Program:</label></td>
+                    <td><input type="checkbox" name="hobby" value="Reading">Reading</td>
+                    <td><input type="checkbox" name="hobby" value="Outdoor Activities">Outdoor Activities</td>
+                    <td><input type="checkbox" name="hobby" value="Watching TV">Watching TV</td>
+                    <td><input type="checkbox" name="hobby" value="Sleeping">Sleeping</td>
+                </tr>
+                <tr>
+                    <td><label style="font-weight: bold;">Comments:</label></td>
+                    <td colspan="5"><textarea name = "comments" rows = "4" cols = "36">Enter comments here.</textarea></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Submit">
+                    <input type="reset" value="Reset"></td>
+                </tr>
+                
+            </table>
+        </form>
+    </body>
+</html>

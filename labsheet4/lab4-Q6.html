@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+
+        var index = 0;
+        var array = Array();
+
+        function add() {
+            array.push(document.getElementById("element").value);
+            
+            alert("Element " + array[index] + " has been added at index " + index); //send alert
+            index++;
+        }
+
+        function display() {
+
+            var result = "<hr>";
+
+            for (var loop = 0; loop < array.length; loop++) {
+                result += "Element " + loop + " = " + array[loop] + "<br>";
+            }
+
+            document.getElementById("print").innerHTML = (
+                result
+            );
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <input type="number" id="element">
+
+    <input type="button" value="Add" onclick="add()">
+    <input type="button" value="Display" onclick="display()">
+
+    <p id="print"></p>
+
+</body>
+
+</html>

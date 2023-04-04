@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>lab4 q1</title>
+        <script>
+            function display(){
+                var name1 = document.myForm.name.value;
+                var age1 = document.myForm.age.value;
+                var email1 = document.myForm.email.value;
+
+                document.getElementById("demo").innerHTML = ("<hr>"+"<br>"+"Welcome "+name1 +"<br> You are "+age1 +" years old" + "<br> Your email address " +email1 )
+            }
+        </script>
+    </head>
+    <body>
+        <form name="myForm">
+            <label>Name:</label> <input type ="text" name="name">
+            <label>Age:</label> <input type ="text" name="age">
+            <label>Email:</label> <input type ="text" name="email">
+            <input type ="button" value = "CLICK!"
+                onclick= "display()"/>
+        </form>
+
+        <p id="demo"></p>
+    </body>
+</html>
